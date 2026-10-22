@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Personal portfolio showcasing engineering projects, technical skills, and development work.">
+
+    <title>KHAN | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">ASIM AKRAM KHAN<span>.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-contact">Let's Connect</a>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero section-container">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ECE GRADUATE · ENGINEERING & TECHNOLOGY
+                </p>
+
+                <h1>
+                    Building things.<br>
+                    <span>Solving problems.</span>
+                </h1>
+
+                <p class="hero-description">
+                       I'm ASIM, an ECE graduate interested in cybersecurity, computer
+                       networks, cloud engineering and building practical technology projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">
+                        Explore My Projects
+                    </a>
+
+                    <a href="#contact" class="button button-secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    CURRENTLY LEARNING & BUILDING
+                </div>
+
+                <div class="hero-card-content">
+                    <p class="card-label">MY APPROACH</p>
+
+                    <h2>Learn it.<br>Build it.<br>Understand it.</h2>
+
+                    <p>
+                        Turning concepts into practical projects,
+                        one step at a time.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <span>ENGINEERING</span>
+                    <span>DEVELOPMENT</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="content-section section-container">
+
+            <p class="section-label">01 / ABOUT</p>
+
+            <h2 class="section-heading">
+                A little about <span>me.</span>
+            </h2>
+
+            <p class="section-description">
+                I'm an Electronics and Communication Engineering student
+                exploring the intersection of software, networking,
+                and technology.
+
+                I enjoy learning how systems work, solving technical
+                problems, and turning what I learn into working projects.
+            </p>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="content-section section-container">
+
+            <p class="section-label">02 / SKILLS</p>
+
+            <h2 class="section-heading">
+                Technologies I'm <span>working with.</span>
+            </h2>
+
+            <p class="section-description">
+                A growing collection of tools and technologies
+                I'm learning through hands-on development.
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python · JavaScript · SQL</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML · CSS · FastAPI</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Databases</h3>
+                    <p>SQLite</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Networking</h3>
+                    <p>Routing · Switching · TCP/IP</p>
+                </div>
+
+            </div>
+
+            <p class="small-note">
+                Skills will be updated to reflect my actual experience
+                and completed projects.
+            </p>
+
+        </section>
+
+
+        
+    
+
+        
+        <!-- Projects Section -->
+        <section id="projects" class="content-section section-container">
+
+            <p class="section-label">03 / SELECTED WORK</p>
+
+            <h2 class="section-heading">
+                Projects that turn <span>ideas into reality.</span>
+            </h2>
+
+            <p class="section-description">
+                A collection of projects exploring software development,
+                cybersecurity, financial data analysis, and computer networking.
+            </p>
+
+            <!-- JavaScript will insert project cards here -->
+            <div id="projects-container" class="projects-grid">
+            <p id="projects-loading" class="small-note">
+                Loading projects...
+            </p>
+            </div>
+
+            <p class="small-note">
+                More projects will be added as I continue learning,
+                building, and documenting my work.
+            </p>
+
+        </section>
+
+
+
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section section-container">
+
+            <p class="section-label">04 / CONTACT</p>
+
+            <h2 class="section-heading">
+                Have an idea? <span>Let's connect.</span>
+            </h2>
+
+            <p class="section-description">
+                Interested in my projects, have a question,
+                or want to collaborate? Feel free to reach out.
+            </p>
+
+            <div class="contact-options">
+
+                <a href="mailto:YOUR_EMAIL@example.com"
+                   class="button button-primary">
+                    Email Me ↗
+                </a>
+
+                <a href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="button button-secondary">
+                    WhatsApp ↗
+                </a>
+
+            </div>
+
+            <!-- We will connect this form to FastAPI and SQLite later. -->
+            <form id="contact-form" class="contact-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            maxlength="100"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            maxlength="254"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="What's this about?"
+                        maxlength="150"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        maxlength="5000"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="button button-primary">
+                    Send Message
+                </button>
+
+                <p id="form-status" role="status" aria-live="polite"></p>
+
+            </form>
+
+            <p class="small-note">
+                The contact form is a visual prototype for now.
+                Message delivery will be implemented in a later phase.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed and built by KHAN.</p>
+        <p>Learning through building.</p>
+    </footer>
+
+</body>
+</html>
+
