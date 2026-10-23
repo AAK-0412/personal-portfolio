@@ -1,4 +1,5 @@
-from backend.database import get_connection, create_tables
+
+from backend.database import get_connection, create_tables, DATABASE_URL
 
 
 projects = [
@@ -81,10 +82,13 @@ def seed_projects():
     create_tables()
     connection = get_connection()
 
+    # Use the correct placeholder style for each database.
+    placeholder = "%s" if DATABASE_URL else "?"
+
     try:
         for project in projects:
             existing = connection.execute(
-                "SELECT id FROM projects WHERE title = ?",
+                f"SELECT id FROM projects WHERE title = {placeholder}",
                 (project["title"],),
             ).fetchone()
 
@@ -92,7 +96,7 @@ def seed_projects():
                 continue
 
             connection.execute(
-                """
+                f"""
                 INSERT INTO projects (
                     title,
                     description,
@@ -101,7 +105,14 @@ def seed_projects():
                     demo_url,
                     status
                 )
-                VALUES (?, ?, ?, ?, ?, ?)
+                VALUES (
+                    {placeholder},
+                    {placeholder},
+                    {placeholder},
+                    {placeholder},
+                    {placeholder},
+                    {placeholder}
+                )
                 """,
                 (
                     project["title"],
@@ -122,4 +133,4 @@ def seed_projects():
 
 if __name__ == "__main__":
     seed_projects()
-    
+
